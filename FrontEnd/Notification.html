@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+    if (!localStorage.getItem("NotificationTaskToken")){
+        alert("please login first")
+        window.open("index.html","_self")
+    }
+</script>
+<script src="js/notification.js" type="module"></script>
+</body>
+</html>

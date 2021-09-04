@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<form style="padding: 4%" id="signInForm">
+    <div class="card-header">Sign In</div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="userName" placeholder="User Name">
+        <label for="userName">User Name</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+        <label for="password">Password</label>
+    </div>
+    <div class="card text-white bg-danger mb-3" id="card" style="margin-top: 2%;width: 50%" >
+        <div class="card-header">Error</div>
+        <div class="card-body">
+            <h5 class="card-title" id="cardTitle"></h5>
+            <p class="card-text" id="cardText"></p>
+        </div>
+    </div>
+<br>
+    <button type="button" class="btn btn-primary" onclick="login()">Login In</button>
+     <button type="button" class="btn btn-danger " onclick="document.getElementById('signInForm').style.display='none';document.getElementById('signUpForm').style.display='block'">SignUp</button>
+
+</form>
+<form style="padding: 4%" id="signUpForm">
+    <div class="card-header">Sign Up</div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="userNameSU" placeholder="User Name">
+        <label for="userNameSU">User Name</label>
+    </div>
+    <div class="form-floating">
+        <input type="password" class="form-control" id="passwordSU" placeholder="Password">
+        <label for="passwordSU">Password</label>
+    </div>
+    <div class="card text-white bg-danger mb-3" id="cardSU" style="margin-top: 2%;width: 50%" >
+        <div class="card-header">Error</div>
+        <div class="card-body">
+            <h5 class="card-title" id="cardTitleSU"></h5>
+            <p class="card-text" id="cardTextSU"></p>
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" onclick="SignUp()">SignUp</button>
+
+
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="js/script.js"  rel="script"></script>
+
+</body>
+</html>
