@@ -18,7 +18,7 @@ https://fcm-django.readthedocs.io/en/latest/
 
 
 ### Descriptions
-* any user can login and sjgn Up useing simple login and sign Up endpoint ; done in back and front 
+* any user can login and sign Up using simple login and sign Up endpoints ; done in back and front 
 * after login user will send fcm_token for individual messaging ; done only in back 
 * only staff can use endpoint sendMessage to send messages to only one devises or to all using "toAll" indicator ; done only in back 
 * after front receive message and update request will be send to back to update message statue
